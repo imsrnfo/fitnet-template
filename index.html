@@ -184,19 +184,18 @@
                                         <div class="row">
                                             <div class="col-4 text-center">
                                                 <div class="row">
-                                                        <div class="mx-auto m-5 col-xl-6 col-lg-10 col-md-10 col-sm-12" >
-                                                            <div class="FlexEmbed FlexEmbed-ratio">
-                                                                <div class="UserImage FlexEmbed-content" style="background-image: url('./img/fitnet-icon.png');"></div>
-                                                            </div>
+                                                    <div class="mx-auto m-5 col-xl-6 col-lg-10 col-md-10 col-sm-12" >
+                                                        <div class="FlexEmbed FlexEmbed-ratio">
+                                                            <div class="UserImage FlexEmbed-content" style="background-image: url('./img/fitnet-icon.png');"></div>
                                                         </div>
-
+                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <button type="button" class="btn btn-secondary mx-auto">Subir archivo</button>
                                                 </div>
                                             </div>
                                             <div class="col-8">
-                                                <form>
+                                                <form class="was-validated">
                                                     <div class="form-row">
                                                         <div class="form-group col-md-6">
                                                             <label for="inputEmail4">Email</label>
@@ -216,20 +215,26 @@
                                                         <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                                                     </div>
                                                     <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputCity">City</label>
-                                                            <input type="text" class="form-control" id="inputCity">
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="validationServer03">City</label>
+                                                            <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid city.
+                                                            </div>
                                                         </div>
-                                                        <div class="form-group col-md-4">
-                                                            <label for="inputState">State</label>
-                                                            <select id="inputState" class="form-control">
-                                                                <option selected>Choose...</option>
-                                                                <option>...</option>
-                                                            </select>
+                                                        <div class="col-md-3 mb-3">
+                                                            <label for="validationServer04">State</label>
+                                                            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid state.
+                                                            </div>
                                                         </div>
-                                                        <div class="form-group col-md-2">
-                                                            <label for="inputZip">Zip</label>
-                                                            <input type="text" class="form-control" id="inputZip">
+                                                        <div class="col-md-3 mb-3">
+                                                            <label for="validationServer05">Zip</label>
+                                                            <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid zip.
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -244,6 +249,13 @@
                                                         <label for="inputFnac">Fecha Nacimiento</label>
                                                         <input type="text" class=" datepicker form-control" id="inputFnac">
                                                     </div>
+
+                                                    <div class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                                                        <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+                                                        <div class="invalid-feedback">Example invalid feedback text</div>
+                                                    </div>
+
                                                     <button type="submit" class="btn btn-primary float-right ml-3">Aceptar</button>
                                                     <button type="submit" class="btn btn-secondary float-right">Cancelar</button>
                                                 </form>
@@ -254,6 +266,23 @@
                             </div>
                         </div>
 					</div>
+
+
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <div class="card closeable-card">
+                                <div class="card-header d-flex flex-row  align-items-center">
+                                    <div class="w-100"> Titulo </div>
+                                    <div> <i class="fas fa-times cursor-pointer p-1" onclick="ocultar(this);"></i> </div>
+                                </div>
+                                <div class="card-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
 				</div>
 				
 			</div>
