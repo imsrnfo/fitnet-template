@@ -276,28 +276,15 @@
                                     <div> <i class="fas fa-times cursor-pointer p-1" onclick="ocultar(this);"></i> </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <label for="inputDesde">Desde</label>
-                                                    <input type="text" class="form-control datepicker" id="inputDesde" placeholder="dd/mm/yyyy">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <label for="inputHasta">Hasta</label>
-                                                    <input type="text" class="form-control datepicker" id="inputHasta" placeholder="dd/mm/yyyy">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2 offset-6">
-                                                <div class="form-group">
-                                                    <div class="form-group">
-                                                        <label for="inputFiltro">.</label>
-                                                        <input type="button" class="btn btn-secondary form-control" id="inputFiltro" value="Filtrar">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control datepicker" id="inputDesde" placeholder="F. Desde">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control datepicker" id="inputHasta" placeholder="F. Hasta">
+                                        </div>
+                                        <div class="col-md-2 offset-6">
+                                            <button type="submit" class="btn btn-secondary float-right"><i class="fa fa-search"></i></button>
                                         </div>
                                     </div>
                                     <table class="table">
@@ -350,6 +337,7 @@
                                         </ul>
                                     </nav>
                                     <button type="submit" class="btn btn-primary float-right ml-3">Nuevo</button>
+                                    <button type="submit" class="btn btn-secondary float-right">Atras</button>
                                 </div>
                             </div>
                         </div>
